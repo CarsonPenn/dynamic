@@ -11,7 +11,7 @@ function changeTheme() {
 
         document.body.classList.add('dark');
 
-        logo.src = 'byui-logo_dark.png'; // Replace with the actual path to the white logo
+        logo.src = 'byui-logo_dark.png'; 
     } else {
         // Remove the dark class from the body
         document.body.classList.remove('dark');
