@@ -13,9 +13,9 @@ ul {
         flex-direction: column; /* this will take the code and adjust it to stack the menus for smaller screens */
         gap: 5px; /* Optional: adjust the spacing between the links */
     }
-    button{
-        
-    }
+    /* button{
+
+    } */
 }
 
 
