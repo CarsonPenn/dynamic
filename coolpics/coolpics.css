@@ -1,0 +1,54 @@
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-direction: row; /* This puts them all in an adaptable row, until the media query below kicks in*/
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    ul {
+        flex-direction: column; /* this will take the code and adjust it to stack the menus for smaller screens */
+        gap: 5px; /* Optional: adjust the spacing between the links */
+    }
+    button{
+        
+    }
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--primary-color);
+}
+/* code from the instructions */
+img {
+	max-width: 100%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+ :root {
+ --primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: Mooli, san-serif;
+ }
+
+ body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+  }
+  a:link,
+  a:visited {
+    color: var(--accent-color);
+  }
+  /* end code from instructions */
