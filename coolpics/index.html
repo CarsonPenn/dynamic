@@ -1,75 +1,48 @@
+<!-- used https://validator.w3.org/ -->
+<!-- also used chat gpt to help find any other errors in being scaleable -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Pics Gallery | Greatest Pics of All Time</title>
-    <!-- Two  -->
-    <meta name="description" content="This is a cool gallery website with some tubular pics.">
+    <meta name="description" content="Responsive photo gallery">
     <meta name="author" content="Carson Smith">
-
+    <title>Cool and Responsive Photo Gallery</title>
     <link rel="stylesheet" href="coolpics.css">
+    
 </head>
 <body>
-<header>
-    <h1>Cool Pics Gallery</h1>
-    <button>Menu</button>
-    <nav>
-        <ul> <!-- using flex to make it a adjustable row and media query to stack when used on smaller screens -->
-            <li><a href="#">Home</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Places</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <header>
+        <h1>My Photo Gallery</h1>
+        <nav>
+            <button class="menu-btn">☰ Menu</button><!-- the little hamburger idea came from chatgpt when i ran my code through and asked to validate it and give me any suggestions to make the site better -->
+            <!--  -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </nav>
-</header>
-<main>
-    <section class="gallery"> 
-        <!-- pic 1 -->
-        <figure>  
-            <img src="assets/norris-sm.jpeg" alt="picture">
-        </figure>
-        <figure>  
-            <img src="assets/norris-sm.jpeg" alt="picture">
-        </figure>
-        <!-- pic 3 -->
-        <figure>  
-            <img src="assets/norris-sm.jpeg" alt="picture">
-        </figure>
-        <!-- pic 4 -->
-        <figure>  
-            <img src="assets/norris-sm.jpeg" alt="picture">
-        </figure>
-        <!-- pic 5 -->
-        <figure>  
-            <img src="assets/norris-sm.jpeg" alt="picture">
-        </figure>
-        <!-- pic 6 -->
-        <figure>  
-            <img src="assets/norris-sm.jpeg" alt="picture">
-        </figure>
-        <!-- pic 7 -->
-        <figure>  
-            <img src="assets/norris-sm.jpeg" alt="picture">
-        </figure>
-        <!-- pic 8 -->
-        <figure>  
-            <img src="assets/norris-sm.jpeg" alt="picture">
-        </figure>
-        <!-- pic 9 -->
-        <figure>  
-            <img src="assets/norris-sm.jpeg" alt="picture">
-        </figure>
+    <main>
+        <section class="gallery">
+            <figure><img src="assets/norris-sm.jpeg" alt="Image 1"></figure>
+            <figure><img src="assets/norris-sm.jpeg" alt="Image 2"></figure>
+            <figure><img src="assets/norris-sm.jpeg" alt="Image 3"></figure>
+            <figure><img src="assets/norris-sm.jpeg" alt="Image 4"></figure>
+            <figure><img src="assets/norris-sm.jpeg" alt="Image 5"></figure>
+            <figure><img src="assets/norris-sm.jpeg" alt="Image 6"></figure>
+            <figure><img src="assets/norris-sm.jpeg" alt="Image 7"></figure>
+            <figure><img src="assets/norris-sm.jpeg" alt="Image 8"></figure>
+            <figure><img src="assets/norris-sm.jpeg" alt="Image 9"></figure>
+        </section>
+        <script src="coolpics.js" defer></script>
+    </main>
 
-    </section>
-</main>
-
-    <script src="coolpics.js" defer></script>
-<footer>©2024 Not a real site</footer>
+    <footer>
+        <p>© 2024 Not a real site</p>
+    </footer>
 </body>
 </html>
-
-
-
