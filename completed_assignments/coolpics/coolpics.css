@@ -79,6 +79,7 @@ img {
 }
 
 /* Footer Styles */
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
@@ -86,8 +87,6 @@ footer {
     color: var(--text-light);
 }
 
-/* Responsive Styles took what the course material had and gave it to chatgpt to help me understand it*/
-/* it gave me some suggestions on how to adapt it to the code I had already written */
 @media (max-width: 768px) {
     nav ul {
         display: none;
@@ -101,5 +100,10 @@ footer {
 
     .menu-btn {
         display: block;
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        padding: 10px;
+        border: none;
+        cursor: pointer;
     }
 }
