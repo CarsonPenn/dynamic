@@ -1,0 +1,107 @@
+/* root taken from assignment details */
+:root {
+    --link-color: #AF1B3F;
+    --text-dark: #473144;
+    --text-light: #ebebeb;
+    --border-color: #EFC69B;
+    --body-font: Georgia, Serif;
+    --headline-font: Impact, Serif;
+    }
+    header h1 {
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    /* .skiptocontent a {
+        position: absolute;
+        top: -50px;
+    }
+    .skiptocontent a:focus {
+        top:0px
+    } */
+     /* nav and header */
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr .25fr;
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: end;
+        justify-items: end;
+        grid-column-start: 2;
+        list-style-type: none;
+        color: var(--link-color);
+        font-size: 1.2em;
+    }
+    a {
+        color: var(--link-color);
+    }
+/* main and body */
+    main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin-top: 10px;
+    }
+    #filters {
+        border: 1px solid var(--border-color);
+    }
+    .item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+        justify-items: center;
+        text-align: left;
+        align-content: center;
+    }
+    .metaBook {
+        border-right: 1px solid var(--border-color);
+        text-align: center;
+    }
+    h3 {
+        color: var(--link-color);
+    }
+
+    #heroImg{
+        width: 45%;
+        height: auto;
+        /* float: center; */
+        align-items: center;
+        margin:0 auto;
+
+
+    }
+
+    /* excerpt page */
+    .excerpt {
+        border: 1px solid var(--border-color);
+        margin: 10px;
+        padding: 10px;
+        background-color: var(--text-light);
+        line-height: 1.5;
+    }
+
+    h4 {
+        color: var(--text-dark);
+        margin: 0 auto;
+        text-align: center;
+        padding-top:15px;
+    }
+    .title {
+        font-family: var(--headline-font);
+        font-size: 1.5em;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .mainNoGrid  {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+    }
+
