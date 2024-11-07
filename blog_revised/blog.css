@@ -52,17 +52,18 @@
     .item {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        justify-content: center;
-        justify-items: center;
+        /* justify-content: center;
+        justify-items: center; */
         text-align: left;
-        align-content: center;
+        /* align-content: center; */
     }
     .metaBook {
         border-right: 1px solid var(--border-color);
-        text-align: center;
+        /* text-align: center; */
     }
     h3 {
         color: var(--link-color);
+        padding:5px;
     }
 
     #heroImg{
