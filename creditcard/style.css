@@ -6,3 +6,10 @@ body {
   text-transform: uppercase;
   padding: 20px 0;
 }
+
+#form-container {
+  margin: auto;
+  width: 500px;
+  height: 290px;
+  position: relative;
+}
