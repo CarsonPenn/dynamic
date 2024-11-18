@@ -3,29 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stlyesheet" href="recipes.css">
+    <title>Recipe Book :)</title>
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Come to learn quick and healthy day changing meals!">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="URL of the page">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <header>
+    <header class="blue">
         <nav class="navbar">
-            <div class="nav-icon">
-                <img class="nav-icon" src="images/recipe-book.png" alt="Site Icon">
-            </div>
-            <div class="nav-title">
-                <h1>Recipe Book</h1>
+            <div class="nav-header">
+                <div class="nav-icon">
+                    <img class="nav-icon" src="images/recipe-book.png" alt="Site Icon">
+                </div>
+                <div class="nav-title">
+                    <h1>Recipe Book</h1>
+                </div>
             </div>
             <div class="nav-search">
                 <input type="text" placeholder="Search...">
+                <img class="navimg" src="images/search.svg" alt="Search Icon">
             </div>
         </nav>
     </header>
     <main>
+        <hr class="divider">
+            <div class="recipe-container">
+                <div class="recipe-img">
+                    <img src="images/black-beans-and-rice.jpg" alt="A pot with rice, black beans, tomatoes, and onions.">
+                </div>
+                <div class="recipe-stats">
+                    <p><span class="border">appetizer</span></p>
+                        <h2>Southwest Dip</h2>
+                        <!-- rating -->
+                        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                        <p>Black beans and tomatoes served over a bed of rice. Top with cheese and scoop up with tortilla chips for maximum enjoyment.</p>
+                </div>
+            </div>
+        
     
 
     </main>
     <footer>
-
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img class="footer-icon" src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img class="footer-icon" src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img class="footer-icon" src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <div id="src">
+            <a class="thx" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+            <a class="thx" href="https://wdd131.netlify.app/prove/recipe-book-1/" title="recipe icons">Assignment Instructions</a>
+        </div>
     </footer>
     <script src="main.js"></script>
 </body>
