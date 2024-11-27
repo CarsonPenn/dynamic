@@ -10,7 +10,6 @@
     <meta property="og:image" content="">
     <meta property="og:url" content="URL of the page">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
     <header class="blue">
@@ -25,34 +24,20 @@
             </div>
             <div class="nav-search">
                 <input type="text" placeholder="Search...">
-                <img class="navimg" src="images/search.svg" alt="Search Icon">
+                <img class="navimg" src="images/search.svg" alt="Search Icon" id="search-icon">
             </div>
+            
         </nav>
     </header>
+
     <main>
         <hr class="divider">
-            <div class="recipe-container">
-                <div class="recipe-img">
-                    <img src="images/black-beans-and-rice.jpg" alt="A pot with rice, black beans, tomatoes, and onions.">
-                </div>
-                <div class="recipe-stats">
-                    <p><span class="border">appetizer</span></p>
-                        <h2>Southwest Dip</h2>
-                        <!-- rating -->
-                        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                        <p>Black beans and tomatoes served over a bed of rice. Top with cheese and scoop up with tortilla chips for maximum enjoyment.</p>
-                </div>
-            </div>
-        
-    
-
+        <!-- rendered recipe below-->
+        <div class="cont-border">
+            <div id="recipe-container"></div>
+        </div>
     </main>
+
     <footer>
         <div class="social">
             <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
@@ -62,9 +47,11 @@
         </div>
         <div id="src">
             <a class="thx" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
-            <a class="thx" href="https://wdd131.netlify.app/prove/recipe-book-1/" title="recipe icons">Assignment Instructions</a>
+            <a class="thx" href="https://wdd131.netlify.app/prove/recipe-book-2/" title="recipe icons">Assignment Instructions</a>
         </div>
     </footer>
-    <script src="main.js"></script>
+
+    <!-- Add the main.js script at the bottom to ensure that the page loads first -->
+    <script src="main.js" type="module"></script>
 </body>
 </html>
