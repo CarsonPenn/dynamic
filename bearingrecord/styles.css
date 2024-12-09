@@ -1,0 +1,213 @@
+/* common elements */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quintessential&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quintessential&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #04588C;
+    --secondary-color: #D9B341;
+    --accent1-color: #048C68;
+    --accent2-color: white;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Quintessential";
+    --paragraph-font: "Montserrat";
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(
+      --primary-color
+    ); /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: var(
+      --primary-color
+    ); /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+  }
+
+body, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: var(--heading-font);
+    font-size: 6px;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a:link, a:visited, a:active {
+    color: var(--secondary-color);
+    text-decoration: none; 
+}
+
+a:hover{
+    color:white;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+  
+  /* Header */
+header {
+    background: var(--primary-color);
+    color: #fff;
+}
+  
+header h1 {
+    font-size: 24px;
+}
+  
+header nav {
+    position: relative;
+}
+  
+header ul {
+    list-style: none;
+    display: flex;
+}
+  
+header ul li {
+    margin: 0 10px;
+}
+  
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+#toggle-nav {
+    display: none;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+.logo{
+    max-width:90px;
+    /* padding:25px; */
+}
+  /* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+  /* home page */
+  /* Hero Section */.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px; /* Adds space between content and image */
+}
+
+.hero-content {
+  flex: 1; /* Ensures content takes up available space */
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  flex-direction: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  padding: 10px 20px;
+  background: var(--secondary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.hero-content .btn:hover {
+  background: #555; /* Lighter color on hover */
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center; /
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Re
+  /* Image Section */
+.image-section {
+    text-align: center;
+    padding: 20px;
+}
+  
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+  
+  
+
+
+
+
+
+
+
+
+/* media tags */
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #toggle-nav {
+      display: block;
+    }
+  
+    header ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background: #444;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    header ul.show {
+      display: flex;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image img {
+      max-width: 80%;
+    }
+  }
+  
