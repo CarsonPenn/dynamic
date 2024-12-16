@@ -7,7 +7,7 @@ const post = [
     {
         name: 'Hong Kong-Taiwan Mission opens',
         date: '1970-12-11',
-		description: 'The Hong Kong-Taiwan mission is opened with Malan R. Jackson was the first president. After a year of rapid growth the Mission was Reorganized in January 1971 to be the Taiwan Mission making it the 93rd Mission of the church. Which had 4,500 members, 90 missionaries, and 50 convert baptisms each month on average. The exciting atmosphere lead to many young Taiwanese and Chinese members serving missions. Image on the left is President Jackson and his family which served alongside him in Taiwan.',
+		description: 'The Hong Kong-Taiwan mission is opened with Malan R. Jackson was the first president. After a year of rapid growth the Mission was Reorganized in January 1971 to be the Taiwan Mission making it the 93rd Mission of the church. Which had 4,500 members, 90 missionaries, and 50 convert baptisms each month on average. The exciting atmosphere lead to many young Taiwanese and Chinese members serving missions. Image on the left is President Jackson and his family which served alongside him in Taiwan. There are now two missions in Taiwan, based in Taipei and Taichung, there are 16 stakes iwth 99 congregations and a temple located in Taipei completed in 1984. Total Church membership is currenttly 62,390 members.',
 		image: './assets/jacksonfam.jpeg',
         publishDate: '2024-12-11',
         source: 'Brigham Young University',
