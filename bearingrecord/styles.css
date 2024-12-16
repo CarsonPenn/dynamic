@@ -37,30 +37,30 @@ body, h2, p, ul, li, a {
 
   
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
 a:link, a:visited, a:active {
-    color: var(--secondary-color);
-    text-decoration: none; 
+  color: var(--secondary-color);
+  text-decoration: none; 
 }
 
 a:hover{
-    color:white;
+  color:white;
 }
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
   
   /* Header */
-  header {
-    background: var(--primary-color);
-    color: #fff;
-    padding: 10px 20px;
+header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
 }
 
 header h1 {
@@ -122,7 +122,8 @@ footer {
 
   /* home page */
   /* Hero Section */
-  .hero {
+  /* Hero Section */
+.hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -140,7 +141,6 @@ footer {
 }
 
 .hero-content p {
-  flex-direction: center;
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -162,7 +162,7 @@ footer {
   flex: 1;
   display: flex;
   justify-content: center; 
-  align-items: center; /
+  align-items: center;
 }
 
 .hero-image img {
@@ -170,8 +170,6 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-
-
   
 /* styling for the post */
 .article-item {
@@ -185,17 +183,11 @@ footer {
   padding: 16px;
   background-color: #f9f9f9;
 }
-.article-item {
-  display: flex;
-  align-items: center; /* Centers vertically */
-  justify-content: center; /* Centers horizontally */
-}
 
 .article-img {
-  width: 300px;
+  width: 100%;  /* Make the image responsive */
   height: auto;
   border-radius: 8px;
-  object-fit: cover;
 }
 
 .article-item h2 {
@@ -203,7 +195,7 @@ footer {
   margin: 0;
   color: var(--secondary-color);
   padding: 5px;
-  padding-left:15px;
+  padding-left: 15px;
 }
 
 .article-date {
@@ -212,13 +204,14 @@ footer {
   background-color: var(--primary-color);
   padding: 5px;
   border-radius: 4px;
-  padding-left:15px;
+  padding-left: 15px;
 }
 
 .article-description {
   margin: 12px 0;
   font-size: 1rem;
   color: #555;
+  padding-left: 10px;
 }
 
 .article-source a {
@@ -229,42 +222,65 @@ footer {
 .article-source a:hover {
   text-decoration: underline;
 }
+html {
+  scroll-behavior: smooth;
+}
 
+/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
   .article-item {
-    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-columns: 1fr;
+    flex-direction: column; 
   }
 
   .article-img {
-    margin-bottom: 16px; /* Add spacing below the image */
+    width: 100%; 
+    margin-bottom: 16px; 
   }
-}
 
+  .article-item h2,
+  .article-description,
+  .article-source {
+    padding-left: 0;
+  }
 
+  .hero {
+    flex-direction: column; 
+    align-items: center; 
+  }
 
+  .hero-content {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
 
+  .hero-image {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
 
+  .hero-image img {
+    border-radius: 8px; 
+  }
 
-/* Responsive Design */
-@media (max-width: 768px) {
   #toggle-nav {
-      display: block; /* Show toggle button on smaller screens */
+      display: block; 
   }
 
   header ul {
       flex-direction: column;
-      display: none; /* Hide by default */
+      display: none; 
       background: var(--primary-color);
       padding: 10px;
       border-radius: 8px;
       position: absolute;
-      top: 60px; /* Adjust based on header height */
+      top: 60px;
       right: 20px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   header ul.show {
-      display: flex; /* Show menu when toggle is clicked */
+      display: flex; 
   }
 
   header ul li {

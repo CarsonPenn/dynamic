@@ -3,23 +3,24 @@ function getToday() {
 }
 
 const post = [
-	{
-        name: 'Nauvoo Mass Endowment Begins ',
-        date: '1845-12-10',
-		description: 'Some 5,000 members received their endowments in the yet-to-be-finished Nauvoo Temple prior to their exodus from Nauvoo.',
-		image: './assets/nauvoo.jpg',
-        publishDate: '2024-12-09',
-        source: 'Church of Jesus Christ of Latter-Day Saints',
-        referenceLink: 'https://history.churchofjesuschrist.org/content/museum/museum-treasures-nauvoo-temple-in-ruins-lithograph?lang=eng'
-	},
+
     {
         name: 'Hong Kong-Taiwan Mission opens',
         date: '1970-12-11',
-		description: 'The Hong Kong-Taiwan mission is opened with Malan R. Jackson was the first president. After a year of rapid growth the Mission was Reorganized in January 1971 to be the Taiwan Mission making it the 93rd Mission of the church. Which had 4,500 members, 90 missionaries, and 50 convert baptisms each month on average. The exciting atmosphere lead to many young Taiwanese and Chinese members serving missions.',
-		image: './assets/nauvoo.jpg',
+		description: 'The Hong Kong-Taiwan mission is opened with Malan R. Jackson was the first president. After a year of rapid growth the Mission was Reorganized in January 1971 to be the Taiwan Mission making it the 93rd Mission of the church. Which had 4,500 members, 90 missionaries, and 50 convert baptisms each month on average. The exciting atmosphere lead to many young Taiwanese and Chinese members serving missions. Image on the left is President Jackson and his family which served alongside him in Taiwan.',
+		image: './assets/jacksonfam.jpeg',
         publishDate: '2024-12-11',
         source: 'Brigham Young University',
         referenceLink: 'https://rsc.byu.edu/sites/default/files/pub_content/pdf/A_Firm_Foundation.pdf'
+	},
+    {
+        name: 'The Hawaiian Islands Mission opens',
+        date: '1850-12-12',
+		description: 'The Sandwich Islands mission as it was then known opens. Hiram Clarck is called to be the first president, this was the 10th mission in operation. There are now two missions in Hawaii, the Hawaii Laie and Hawaii Honolulu Missions. By 1854, there were over 4,000 Hawaiian converts in 53 branches scattered throughout the islands, the Book of Mormon had been translated into Hawaiian, and converts gathered to a colony on Lanai. There are currently 16 stakes, 143 congretations, 2 temples and an astounding 75,635 total church membership in the Hawaiian Islands.',
+		image: './assets/Kalaupapa.jpg',
+        publishDate: '2024-12-12',
+        source: 'Brigham Young University',
+        referenceLink: 'https://history.churchofjesuschrist.org/chd/organization/mission/hawaiian-1850?timelineTab=all-events&lang=por#:~:text=The%20first%20branch%20in%20the,to%20a%20colony%20on%20Lanai.'
 	},
     {
         name: 'Welsh Mission opens',
