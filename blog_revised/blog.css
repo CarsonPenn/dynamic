@@ -53,44 +53,47 @@
         grid-gap: 10px;
         margin: 10px;
         align-items: center;
-        align-items: center;
     }
 
     .mainBook {
         border: 1px solid var(--border-color);
         padding: 10px;
         background-color: var(--text-light);
+        display: grid;
+        place-items: center; 
+        height: 100vh;
+        margin-bottom:25px;
     }
 
 
     .item {
         display: grid;
         grid-template-columns: 1fr 2fr;
-
+        /* column-gap: 25px; */
+    }
+    h5{
+        font-size: 20px;
     }
     .metaBook {
-        border-right: 1px solid var(--border-color);
         text-align: right;
-        padding-right: 25 px;
+        padding-right: 10px;
+        /* margin-right:15px; */
     }
     h3 {
         color: var(--link-color);
         padding:5px;
+        font-size: 40px;
     }
 
     #heroImg{
         width: 45%;
         height: auto;
-        /* float: center; */
-        /* align-items: center; */
-        /* margin:0 auto; */
-
-
     }
 
     #filters {
         border: 1px solid var(--border-color);
         padding: 10px;
+        margin-left:15px;
     }
 
     /* excerpt page */
