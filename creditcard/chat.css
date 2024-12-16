@@ -1,6 +1,6 @@
-
+/* help from chatgpt with layout */
 body {
-  background-color: #ffb242;
+  background-color: tan;
   font-family: lato, 'helvetica-light';
   position: relative;
   text-transform: uppercase;
@@ -11,19 +11,15 @@ body {
   font-size: 12px;
 }
 
-#amount strong {
-  font-size: 14px;
-}
-
 #card-back {
   top: 40px;
   right: 0;
   z-index: -2;
 }
 
+/* button */
 #card-btn {
   background-color: rgba(251, 251, 251, 0.8);
-  color: #ffb242;
   position: absolute;
   bottom: -55px;
   right: 0;
@@ -32,7 +28,6 @@ body {
   height: 42px;
   font-size: 12px;
   font-family: lato, 'helvetica-light', 'sans-serif';
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
   outline: none;
@@ -41,7 +36,8 @@ body {
 }
 
 #card-btn:hover {
-  background-color: rgba(251, 251, 251, 1);
+  background-color: lightblue;
+  color:white;
 }
 
 #card-cvc {
@@ -52,7 +48,7 @@ body {
 #card-front,
 #card-back {
   position: absolute;
-  background-color: #498ee4;
+  background-color: lightgray;
   width: 390px;
   height: 250px;
   border-radius: 6px;
@@ -61,7 +57,7 @@ body {
   font-size: 10px;
   letter-spacing: 1px;
   font-weight: 300;
-  color: white;
+  color: black;
 }
 
 #card-image {
@@ -164,7 +160,6 @@ body {
   margin-left: 10px;
   width: 32%;
   display: inline-block;
-  float: right;
 }
 
 .hidden {
@@ -188,12 +183,12 @@ body {
 input {
   border: none;
   outline: none;
-  background-color: #5a9def;
+  background-color: darkgray;
   height: 30px;
   line-height: 30px;
   padding: 0 10px;
   margin: 0 0 25px;
-  color: white;
+  color: black;
   font-size: 10px;
   box-sizing: border-box;
   border-radius: 4px;
