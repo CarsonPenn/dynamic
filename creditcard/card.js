@@ -15,7 +15,8 @@ document.getElementById('card-btn').addEventListener('click', function () {
     successMessage.classList.add('hidden');
     errorMessage.classList.add('hidden');
 
-    // Validate inputs
+
+    // Validate inputs from chatgpt
     let error = '';
     if (!/^\d{16}$/.test(cardNumber)) {
         error = 'Invalid card number. Must be 16 digits.';
@@ -29,13 +30,16 @@ document.getElementById('card-btn').addEventListener('click', function () {
         error = 'Invalid CVC. Must be 3 or 4 digits.';
     }
 
-    // Show error message if any
+    // error message
     if (error) {
         cardErrorText.textContent = error;
         errorMessage.classList.remove('hidden');
         return;
     }
 
-    // Simulate form submission
+// 
     successMessage.classList.remove('hidden');
 });
+
+
+// thanks to w3schools for several exaples i leared from and for chatgpt helping with the error messages
