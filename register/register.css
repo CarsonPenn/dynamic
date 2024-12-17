@@ -154,6 +154,32 @@
   button:hover {
     background: #00b33c;
   }
+
+  .participants {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;  /* Optional, add space after participants section */
+  }
+  
+  #add {
+    align-self: flex-end;  /* Aligns the button to the right */
+    margin: 10px; /* Optional: Space around the button */
+  }
+  
+  
+  
+  
+  .participant1,
+  .participant2 {
+    grid-column: span 1;
+  }
+  
+  .btn-block button {
+    grid-column: span 2;
+  }
+  
+
   @media (max-width: 568px) {
     .columns div {
       width: 100%;
