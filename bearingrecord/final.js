@@ -5,11 +5,25 @@ document.getElementById('toggle-nav').addEventListener('click', () => {
     document.getElementById('nav-links').classList.toggle('show');
 });
 
-// Get today's date in 'YYYY-MM-DD' format
+// fixing the date to show in  mountain time zone
 const getToday = () => {
     const now = new Date();
-    return now.toISOString().split('T')[0]; // ISO string is in 'YYYY-MM-DD' format
+    const formatter = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/Denver', // Mountain Time Zone
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+    });
+
+    // Format to MM/DD/YYYY and reformat to YYYY-MM-DD
+    const parts = formatter.formatToParts(now);
+    const year = parts.find(part => part.type === 'year').value;
+    const month = parts.find(part => part.type === 'month').value;
+    const day = parts.find(part => part.type === 'day').value;
+
+    return `${year}-${month}-${day}`;
 };
+
 
 // Filter articles by today's date
 const getTodaysArticles = articles => {
@@ -42,6 +56,10 @@ const renderArticles = () => {
         ? todaysArticles.map(articleTemplate).join('') 
         : '<p>No articles available for today.</p>';
 };
+
+console.log(getToday()); // Check the output of today's date
+
+
 
 // Render articles on page load
 renderArticles();

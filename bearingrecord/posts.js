@@ -47,7 +47,7 @@ const post = [
         image: './assets/portoalegre.webp',
         publishDate: '2024-12-17',
         source: 'Church of Jesus Christ Temples',
-        referenceLink: 'https://churchofjesuschristtemples.org/porto-alegre-brazil-temple/',
+        referenceLink: 'https://churchofjesuschristtemples.org/porto-alegre-brazil-temple/'
     },
     {
         name: 'Joseph Smith Jun. gives the first patriarachal blessing of this dispensation in Kirtland at the Johnson Inn.',
@@ -56,20 +56,33 @@ const post = [
         image: './assets/js-sr.jpg',
         publishDate: '2024-12-18',
         source: 'Church of Jesus Christ of Latter-Day Saints',
-        referenceLink: 'https://history.churchofjesuschrist.org/blog/a-history-of-patriarchs-and-patriarchal-blessings?lang=eng',
+        referenceLink: 'https://history.churchofjesuschrist.org/blog/a-history-of-patriarchs-and-patriarchal-blessings?lang=eng'
     },
     {
         name: 'The government of Kazakhstan formally recognizes the Church of Jesus Christ of Latter-Day Saints.',
         date: '2000-12-19',
-        description: 'Once a republic formally a part of the Soviet Union, recognized the Church this day twenty-four years ago. Since the first baptisms in 1999, the church has grown to three congregations with a total membership of 218 members. Kazakhstan is currently a part of the Central Eurasia Mission. Image to the left shows a visit by Elder Cook to the Almaty Kazakhstan branch. Credit kazahkwak.',
+        description: 'A republic formally a part of the Soviet Union, recognized the Church this day twenty-four years ago. Since the first baptisms in 1999, the church has grown to three congregations with a total membership of 218 members. Kazakhstan is currently a part of the Central Eurasia Mission. Image to the left shows a visit by Elder Cook to the Almaty Kazakhstan branch. Credit kazahkwak.',
         image: './assets/kazahkstan.webp',
         publishDate: '2024-12-19',
         source: 'Church of Jesus Christ of Latter-Day Saints Newsroom',
-        referenceLink: 'https://newsroom.churchofjesuschrist.org/facts-and-statistics/country/kazakhstan#:~:text=The%20Church%20received%20official%20recognition,Almaty%20on%20July%2029%2C%202001.',
+        referenceLink: 'https://newsroom.churchofjesuschrist.org/facts-and-statistics/country/kazakhstan#:~:text=The%20Church%20received%20official%20recognition,Almaty%20on%20July%2029%2C%202001.'
+    },
+    // adding new story of the day
+    {
+        name: 'The Mozambique Biera Mission is opened, an offshoot of the South Afrixa Johannesburg Misison, with Nilson J. Moraes acting as President',
+        date: '2004-12-20',
+        description: 'The church was properly recognized by the governmant in 1996. In a period of rapid growth there have been seven stakes, two districts and a total of 69 congregations, with a total of 24,733 members. A temple was announced in 2021 to be located in Beira A second mission is opened the spring of 2021 based in Maputo. The image on the left is of missonaries who are from Mozambique and nearby countries serving in the Mozambique Mission.',
+        image: './assets/MZ.png',
+        publishDate: '2024-12-20',
+        source: 'Church of Jesus Christ of Latter-Day Saints Global Histories',
+        referenceLink: 'https://www.churchofjesuschrist.org/study/history/global-histories/mozambique/mz-chronology?lang=eng'
     }
 
+];
 
+console.log("Today's Date:", getToday());
 
-]
 
 export default post
+
+

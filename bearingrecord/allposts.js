@@ -6,20 +6,19 @@ document.getElementById('toggle-nav').addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
 
-// Function to get today's date in 'YYYY-MM-DD' format, adjusted for local timezone
-function getToday() {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
-    const day = String(now.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
-}
+// Function to get today's date in 'YYYY-MM-DD' format
+// const getToday = () => {
+//     const now = new Date();
+//     return now.toISOString().split('T')[0]; // ISO string is in 'YYYY-MM-DD' format
+// };
 
-// Function to filter articles where the publishDate is before today
+const getToday = () => '2024-12-19'; // Test with a specific date
+
+
+// Function to filter articles for today or earlier
 function getPastArticles(articles) {
     const today = getToday();
-    const filtered = articles.filter(article => article.publishDate < today);
-    return filtered;
+    return articles.filter(article => article.publishDate <= today);
 }
 
 // Function to generate HTML for a single article
@@ -29,7 +28,7 @@ function articleTemplate(article) {
         <div>
             <header>
                 <h2>${article.name}</h2>
-                <p class="article-date">Published: ${article.publishDate}   |    Date: ${article.date}</p>
+                <p class="article-date">Published: ${article.publishDate} | Date: ${article.date}</p>
             </header>
             <p class="article-description">${article.description}</p>
             <footer>
@@ -50,5 +49,9 @@ function renderArticles() {
     }
 }
 
+
+
 // Render articles on page load
 renderArticles();
+
+
